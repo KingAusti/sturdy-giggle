@@ -1,4 +1,5 @@
 import discord
+from token.py import bot_credentials
 
 client = discord.Client()
 
@@ -11,4 +12,4 @@ async def on_ready():
         if 'rick' in message.content.lower():
             await message.channel.send('https://www.youtube.com/watch?v=dQw4w9WgXcQ')
 
-client.run('MTA1MzQ1Nzg0OTM1NjkyNzAyNg.GLWl9L.bl_OlYf2pANYvmBD3rqAWm2EQhBPfLDbRk-_-w')
+client.run(bot_credentials)
