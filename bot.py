@@ -1,7 +1,7 @@
 import discord
-from token.py import bot_credentials
+from bot_key import bot_credentials
 
-client = discord.Client()
+client = discord.Client(intents=discord.Intents.all())
 
 @client.event
 async def on_ready():
